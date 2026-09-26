@@ -1,0 +1,10 @@
+import PasswordForm from "../_components/PasswordForm";
+
+export default function Page() {
+  return (
+    <main className="p-8">
+      <h1 className="text-2xl font-bold mb-4">Required Field</h1>
+      <PasswordForm />
+    </main>
+  );
+}
