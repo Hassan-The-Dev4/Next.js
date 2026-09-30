@@ -24,8 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* suppressHydrationWarning: browser extensions (e.g. ColorZilla's cz-shortcut-listen)
+          add attributes to <body> before React hydrates. Only affects <body>'s own attributes. */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         {children}
       </body>
